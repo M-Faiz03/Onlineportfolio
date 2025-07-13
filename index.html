@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            border: 0.1px solid black;
+            background-color: rgba(38, 36, 36, 0.273);
+
+        }
+        .section1{
+            height: 60%;
+            width: 100%;
+            background-image:url(https://img.freepik.com/free-photo/portrait-handsome-smiling-stylish-hipster-lambersexual-modelman-dressed-white-tshirt-jeans-fashion-male-posing-near-wall-studio-isolated_158538-22615.jpg?semt=ais_hybrid&w=740);
+            background-size: cover;
+            background-color: rgba(38, 36, 36, 0.273);
+        }
+        .navbar{
+            height: 90px;
+            display: flex;
+            flex-direction: row;
+            background-color: rgba(89, 88, 88, 0.615);
+            justify-content: space-between;
+            align-items: center;
+            padding-left:25px;
+            padding-right: 25px;
+        } 
+        .content{
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+        h2{
+            font-size: 2rem;
+
+        }
+        .h1{
+            grid-row-start:1;
+            grid-column-start: 2;
+        }
+        .webd{
+            grid-row-start:2 ;
+            grid-column-start: 2;
+        }
+        .button{
+            height: 40px;
+            width: 150px;
+            grid-row-start: 3;
+            grid-column-start: 2;
+            background-color: blue;
+            color: white;
+            font-size: 1.1rem;
+            border-radius: 17px;
+            
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+        }
+        #menu{
+            display: flex;
+            gap: 15px;
+        }
+        #grid{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top:10px ;
+        }
+        #aboutme{
+            font-size: 2rem;
+        }
+        .about{
+            display: flex;
+            flex-direction: row;
+        }
+        .left{
+            width: 70vw;
+            display: flex;
+            flex-direction: column;
+            gap:4px;
+        }
+        #img{
+            position: absolute;
+            right: 4%;
+            top: 15%;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section1">
+            <div class="navbar">
+            <ul style="color: white;">
+                <h2>Online Portfolio</h2>
+                <h6>just another my blog site</h6>
+            </ul>
+            <ul id="menu">
+                <a href="#">Home</a>
+                <a href="#">About me</a>
+                <a href="#">Services</a>
+                <a href="#">Skills</a>
+                <a href="#">testimonal</a>
+                <a href="#">Experiance</a>
+                <a href="#">Work</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact us</a>
+            </ul>
+
+        </div>
+         <div class="content">
+                <h1 class="h1" id="grid">SHIVAM SINGH</h1>
+                <p class="webd" id="grid" style="font-size: 1.2rem;">Welcome to my digital playground! I’m a web developer passionate about crafting clean, responsive, and 
+                    engaging experiences for the web....</p>
+                </br>
+                <button id="grid" class="button">Hire me</button>
+                
+            </div>
+        </div>
+        <div class="about">
+            <div class="left">
+                <h1 id="aboutme">ABOUT ME:</h1>
+                <br>
+                <p style="font-size: 1.5rem;">I am Developer blends expertise with industry know-how to guide your next property development.</p>
+                </br>
+                <span style="font-size: 1.2rem;">I’m a web developer passionate about crafting clean, responsive, and engaging experiences for the web. 
+                    From pixel-perfect frontends to robust backend logic, I love turning ideas into interactive realities. 
+                    I share my learnings, experiments, and projects here—whether it’s a quirky CSS trick or a full-stack build.
+                     Come along for the journey as I explore the art and science behind web development.</span>
+                </br>
+                <button class="button" >Download Resume</button>
+                
+            </div>
+            <div class="right">
+                <img id="img" src="codsoft.png" alt="CODSOFT" height="650px" width="420px">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
